@@ -1,3 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Inter, sans-serif;
+  }
+  body {
+    font-family: Inter, sans-serif;
+    background: black;
+  }
+}
+
+@layer components {
+  .heading1 {
+    @apply font-mons font-bold text-xl leading-normal lg:text-4xl lg:leading-[4.5rem] text-primary;
+  }
+  .paragraph {
+    @apply font-sans font-normal text-md leading-normal text-primary;
+  }
+}
+
+.lending-page-bg {
+  background: url("../src/assets/images/bg-image.svg") no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -10;
+  backdrop-filter: blur(21.04110336303711px);
+  -webkit-filter: blur(21.04110336303711px);
+}
+
+.section-two-bg {
+  background: url("../src/assets/images/section2-bg.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 400px;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -20;
+  backdrop-filter: blur(24.046974182128906px);
+  -webkit-filter: blur(24.046974182128906px);
+}
+
+.secondaryBtnGradient {
+  padding: 13px 52px;
+  border-radius: 57.112px;
+  border: 2.004px solid #ee0bd7;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(16.53229522705078px);
+}
+.hoverSecondaryBtnGradient {
+  background-color: #ee0bd7;
+}
+
+.primaryBtnGradient {
+  background: linear-gradient(89deg, #f20493 4.32%, #9616c3 93.14%);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-img {
+  width: 58vw;
+  height: 57vh;
+}
+
+.card-item {
+  border-radius: 19.037px;
+  border: 2.004px solid #ee0bd7;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.53229522705078px);
+}
+.header-bg1 {
+  background: url("../src/assets/images/bg-ellipse1.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: -10;
+}
