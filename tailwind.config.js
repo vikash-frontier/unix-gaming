@@ -17,6 +17,7 @@ export default {
         xxl: "2.5rem",
         xxxl: "3rem",
         "4xl": "6rem",
+        "2xl": "3.75rem",
       },
       fontWeight: {
         light: 300,

@@ -22,3 +22,23 @@ export const MARKETING_DATA = [
     name: "Marketing",
   },
 ];
+
+export const GAMER_DATA = [
+  {
+    id: 1,
+    name: "Sdk for games",
+  },
+  {
+    id: 2,
+    name: "Web3 social app",
+  },
+  {
+    id: 3,
+    name: "Multi-chain launchpad",
+  },
+
+  {
+    id: 4,
+    name: "Gaming Studio",
+  },
+];
