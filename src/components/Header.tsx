@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={` container mx-auto mt-16  flex justify-between items-center`}
+        className={` container mx-auto mt-8 md:mt-16  flex justify-between items-center overflow-x-hidden`}
       >
         <img src={logo} alt="Logo" />
         <nav className={` flex gap-[30px] items-center list-none`}>

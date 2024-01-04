@@ -15,10 +15,15 @@ function App() {
       <Header />
       <SectionOne />
       <SectionTwo />
+
       <SectionThree />
+
       <SectionFour />
+
       <SectionFive />
+
       <SectionSix />
+
       <Footer />
     </div>
   );

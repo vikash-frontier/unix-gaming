@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className=" container mx-auto mt-[257px] flex flex-col justify-center items-center relative">
+    <footer className=" container mx-auto md:mt-[257px] mt-[150px]  flex flex-col justify-center items-center relative mb-[100px] md:mb-0">
       <img
         src={sectionFooter}
         alt=""

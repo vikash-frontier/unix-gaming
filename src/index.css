@@ -39,7 +39,7 @@
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: -10;
   backdrop-filter: blur(21.04110336303711px);
   -webkit-filter: blur(21.04110336303711px);
@@ -54,7 +54,7 @@
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: -20;
   backdrop-filter: blur(24.046974182128906px);
   -webkit-filter: blur(24.046974182128906px);
@@ -77,12 +77,12 @@
   background: linear-gradient(89deg, #f20493 4.32%, #9616c3 93.14%);
 }
 
-.hero-container {
+/* .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-}
+} */
 
 .hero-img {
   width: 58vw;
