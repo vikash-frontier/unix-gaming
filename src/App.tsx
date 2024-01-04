@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SectionFive from "./components/SectionFive";
 import SectionFour from "./components/SectionFour";
@@ -8,7 +9,7 @@ import SectionTwo from "./components/SectionTwo";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <div className="lending-page-bg"></div>
       <div className="header-bg1"></div>
       <Header />
@@ -18,6 +19,7 @@ function App() {
       <SectionFour />
       <SectionFive />
       <SectionSix />
+      <Footer />
     </div>
   );
 }

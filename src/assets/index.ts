@@ -19,7 +19,10 @@ import sectionSixImg from "./images/section-six-img.svg";
 import facebookIcon from "./icons/facebook.svg";
 import whatsappIcon from "./icons/whatsApp.svg";
 import instaIcon from "./icons/instagram.svg";
-
+import uLogo from "./icons/u-logo.svg";
+import logoBg from "./icons/logo-bg.svg";
+import lendingEllipseOne from "./images/bg-ellipse1.svg";
+import lendingEllipseTwo from "./images/bg-ellipse2.svg";
 export {
   logo,
   heroImg,
@@ -42,4 +45,8 @@ export {
   facebookIcon,
   instaIcon,
   whatsappIcon,
+  uLogo,
+  logoBg,
+  lendingEllipseOne,
+  lendingEllipseTwo,
 };
