@@ -13,6 +13,12 @@ import sectionFourImg from "./images/sectionthree-img.svg";
 import gardenCart from "./icons/garden-cart.svg";
 import sectionFourEllipse1 from "./images/sectionthree-ellipse1.svg";
 import sectionFourEllipse2 from "./images/sectionthree-ellipse2.svg";
+import sectionSixElippse from "./images/section-six-ellipse.svg";
+import sectionFooter from "./images/footer-ellipse.svg";
+import sectionSixImg from "./images/section-six-img.svg";
+import facebookIcon from "./icons/facebook.svg";
+import whatsappIcon from "./icons/whatsApp.svg";
+import instaIcon from "./icons/instagram.svg";
 
 export {
   logo,
@@ -30,4 +36,10 @@ export {
   gardenCart,
   sectionFourEllipse1,
   sectionFourEllipse2,
+  sectionFooter,
+  sectionSixElippse,
+  sectionSixImg,
+  facebookIcon,
+  instaIcon,
+  whatsappIcon,
 };

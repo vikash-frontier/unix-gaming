@@ -10,6 +10,7 @@
   }
   html {
     font-family: Inter, sans-serif;
+    overflow-x: hidden;
   }
   body {
     font-family: Inter, sans-serif;
@@ -126,4 +127,26 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.partnership-card {
+  border-radius: 19.037px;
+  border: 2.004px solid #ee0bd7;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(16.53229522705078px);
+}
+.email-card-container {
+  border-radius: 38px;
+  border: 9.05px solid #ee0bd7;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(74.65984344482422px);
+  box-sizing: border-box;
+}
+
+.email-inp {
+  border-radius: 75.4px;
+  border: 2.646px solid #ee0bd7;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(21.826412200927734px);
 }
