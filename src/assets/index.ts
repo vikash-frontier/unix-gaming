@@ -9,6 +9,10 @@ import heroTwoBgImg1 from "./images/hero-ellipse-two.svg";
 import heroTwoBgImg2 from "./images/hero-ellipse-two2.svg";
 import leftIcon from "./icons/left-icon.svg";
 import downIcon from "./icons/down-icon.svg";
+import sectionFourImg from "./images/sectionthree-img.svg";
+import gardenCart from "./icons/garden-cart.svg";
+import sectionFourEllipse1 from "./images/sectionthree-ellipse1.svg";
+import sectionFourEllipse2 from "./images/sectionthree-ellipse2.svg";
 
 export {
   logo,
@@ -22,4 +26,8 @@ export {
   heroTwoBgImg2,
   leftIcon,
   downIcon,
+  sectionFourImg,
+  gardenCart,
+  sectionFourEllipse1,
+  sectionFourEllipse2,
 };

@@ -113,3 +113,17 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(16.53229522705078px);
 }
+
+.buy-unix-token-btn {
+  border-radius: 57.112px;
+  border: 2.004px solid #ee0bd7;
+  padding: 13.025px 41.08px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16.53229522705078px);
+}
+.buy-btn-gradiant {
+  background: linear-gradient(90deg, #f20493 18.03%, #9616c3 99.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

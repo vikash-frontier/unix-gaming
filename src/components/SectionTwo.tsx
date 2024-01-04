@@ -1,4 +1,3 @@
-import React from "react";
 import { MARKETING_DATA } from "../utils/mockData";
 
 const SectionTwo = () => {
