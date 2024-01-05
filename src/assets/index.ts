@@ -23,6 +23,8 @@ import uLogo from "./icons/u-logo.svg";
 import logoBg from "./icons/logo-bg.svg";
 import lendingEllipseOne from "./images/bg-ellipse1.svg";
 import lendingEllipseTwo from "./images/bg-ellipse2.svg";
+import closeIcon from "./icons/close_gray.svg";
+import downGray from "./icons/down-gray.svg";
 export {
   logo,
   heroImg,
@@ -49,4 +51,6 @@ export {
   logoBg,
   lendingEllipseOne,
   lendingEllipseTwo,
+  closeIcon,
+  downGray,
 };

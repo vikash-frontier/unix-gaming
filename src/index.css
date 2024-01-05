@@ -39,7 +39,7 @@
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: -10;
   backdrop-filter: blur(21.04110336303711px);
   -webkit-filter: blur(21.04110336303711px);
@@ -156,4 +156,36 @@
   border: 0.6px solid #ee0bd7;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4.9499993324279785px);
+}
+
+.mobileSidebar {
+  position: fixed;
+  width: 100vw;
+  background: #0a0d14;
+  height: 100vh;
+  z-index: 998;
+  left: 0;
+  overflow-y: auto;
+  top: -1000px;
+  box-shadow: 0 0 6px 0 rgb(0 0 0 / 10%);
+}
+
+.mobileSidebar,
+.mobileSidebar.open {
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+.mobileSidebar.open {
+  top: 0;
+  left: 0;
+}
+
+.login-btn-mob {
+  padding: 5px 10px;
+  border-radius: 57.112px;
+  border: 2.004px solid #ee0bd7;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(16.53229522705078px);
 }
