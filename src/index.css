@@ -189,3 +189,25 @@
 
   backdrop-filter: blur(16.53229522705078px);
 }
+
+.header-menu-list .header-submenu {
+  display: none;
+}
+.header-menu-list:hover .header-submenu {
+  display: flex;
+}
+
+.subMenu_gradient {
+  background: linear-gradient(
+    101.39deg,
+    rgba(204, 112, 60, 0.8) 3.47%,
+    rgba(189, 0, 125, 0.8) 153.96%
+  );
+}
+.shadow-headerMenu {
+  border: 2.004px solid #ee0bd7;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(74.65984344482422px);
+  box-sizing: border-box;
+}

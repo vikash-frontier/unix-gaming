@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
 
-import { logo } from "../assets";
+import { downGray, logo } from "../assets";
 import MobileSidebar from "./MobileSidebar";
 
 const Header = () => {
   const [hamburger, setHamburger] = useState(false);
   const [scroll, setScroll] = useState(0);
 
-  const handleScrollForEventListener = (event: Event) => {
+  const handleScrollForEventListener = () => {
     const scrollValue = window.pageYOffset;
     setScroll(scrollValue);
   };
@@ -25,12 +25,80 @@ const Header = () => {
       <header
         className={` container mx-auto mt-[67px] hidden md:flex justify-between items-center `}
       >
-        <img src={logo} alt="Logo" className=" z-[999]" />
-        <nav className={` flex gap-[30px] items-center list-none z-[999]`}>
-          <li className=" text-primary">Home</li>
-          <li className=" text-primary">Products</li>
-          <li className=" text-primary">Buy unix token</li>
-          <li className=" text-primary">Community</li>
+        <img src={logo} alt="Logo" className=" z-[20]" />
+        <nav className={` flex gap-[30px] items-center list-none z-[20] `}>
+          <li className=" text-primary">
+            <div>
+              Home
+              <img src="" />
+            </div>
+          </li>
+          <li className=" text-primary header-menu-list flex items-center relative cursor-pointer group/menu">
+            <div
+              className={`header-menu  text-text-50 dark:text-text-50 flex items-center gap-x-2.5 px-2 py-1.5 rounded`}
+            >
+              Products
+              <img
+                src={downGray}
+                alt="expand"
+                className={` group-hover/menu:block w-4 h-4`}
+              />
+              <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
+                <ul>
+                  <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
+                    <div className="flex items-center gap-2">
+                      <span>Product 1</span>
+                    </div>
+                  </li>
+                  <li className="header-submenu-list rounded-lg mb-1 group/subMenu">
+                    <div className="flex items-center gap-2">
+                      <span>Product 2</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li className=" header-menu-list flex items-center relative cursor-pointer group/menu">
+            <div
+              className={`header-menu text-primary  text-text-50 dark:text-text-50 flex items-center gap-x-2.5 px-2 py-1.5  rounded`}
+            >
+              Buy unix token
+              <img src={downGray} alt="expand" className={`w-4 h-4`} />
+              <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
+                <ul>
+                  <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
+                    <div className="flex items-center gap-2">
+                      <span>Doge coin</span>
+                    </div>
+                  </li>
+                  <li className="header-submenu-list rounded-lg mb-1 group/subMenu">
+                    <div className="flex items-center gap-2">
+                      <span>BNB</span>
+                    </div>
+                  </li>
+                  <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
+                    <div className="flex items-center gap-2">
+                      <span>Ehereum</span>
+                    </div>
+                  </li>
+                  <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
+                    <div className="flex items-center gap-2">
+                      <span>Matic</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li className=" relative ">
+            <div
+              className={`header-menu  text-primary  text-text-50 dark:text-text-50 flex items-center gap-x-2.5 px-2 py-1.5 rounded`}
+            >
+              Community
+              <img src={downGray} alt="expand" className={`w-4 h-4`} />
+            </div>
+          </li>
         </nav>
         <button className="secondaryBtnGradient p-[1px] paragraph_medium inline-block rounded-[36px] cursor-pointer hover:!hoverSecondaryBtnGradient  text-primary ">
           Login
