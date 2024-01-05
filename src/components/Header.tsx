@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={` container mx-auto mt-[67px] hidden md:flex justify-between items-center `}
+        className={` container mx-auto mt-[67px]  hidden md:flex justify-between items-center `}
       >
         <img src={logo} alt="Logo" className=" z-[20]" />
         <nav className={` flex gap-[30px] items-center list-none z-[20] `}>
@@ -43,7 +43,7 @@ const Header = () => {
                 alt="expand"
                 className={` group-hover/menu:block w-4 h-4`}
               />
-              <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
+              {/* <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
                 <ul>
                   <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
                     <div className="flex items-center gap-2">
@@ -56,7 +56,7 @@ const Header = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </li>
           <li className=" header-menu-list flex items-center relative cursor-pointer group/menu">
@@ -65,7 +65,7 @@ const Header = () => {
             >
               Buy unix token
               <img src={downGray} alt="expand" className={`w-4 h-4`} />
-              <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
+              {/* <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
                 <ul>
                   <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
                     <div className="flex items-center gap-2">
@@ -88,7 +88,7 @@ const Header = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </li>
           <li className=" relative ">

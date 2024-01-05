@@ -10,8 +10,7 @@ import SectionTwo from "./components/SectionTwo";
 function App() {
   return (
     <div>
-      <div className="lending-page-bg"></div>
-      <div className="header-bg1"></div>
+      <div className="lending-page-bg" />
       <Header />
       <SectionOne />
       <SectionTwo />

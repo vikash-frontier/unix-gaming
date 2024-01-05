@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   facebookIcon,
   instaIcon,
@@ -5,10 +6,12 @@ import {
   sectionFooter,
   whatsappIcon,
 } from "../assets";
+import { useAnimationInView } from "../hooks/useAnimationInView";
 
 const Footer = () => {
+  const { control, animationRef } = useAnimationInView();
   return (
-    <footer className=" container mx-auto md:mt-[257px] mt-[150px]  flex flex-col justify-center items-center relative mb-[100px] md:mb-0">
+    <footer className=" container mx-auto md:mt-[250px] mt-[150px]  flex flex-col justify-center items-center relative mb-[100px] md:mb-0">
       <img
         src={sectionFooter}
         alt=""
@@ -16,31 +19,45 @@ const Footer = () => {
       />
 
       <div className=" flex gap-[17px] items-center">
-        <div className="relative w-[100px] h-[100px]">
+        <div className="relative w-[100px] h-[100px]" ref={animationRef}>
           <img src={logoBg} alt="logo" />
           <h2 className=" text-primary font-sans text-[50px] font-extrabold absolute top-4 right-8">
             U
           </h2>
         </div>
-        <h2 className="heading2 !leading-[50px]">
+        <motion.h2
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+          className="heading2 !leading-[50px]"
+        >
           unix <br /> gaming
-        </h2>
+        </motion.h2>
       </div>
 
       <div className=" flex gap-[30px] mt-12 ">
-        <img
+        <motion.img
           src={whatsappIcon}
           alt="whatsapp"
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
           className="social-icon py-[15px] px-[14px]"
         />
-        <img
+        <motion.img
           src={instaIcon}
           alt="instagram"
+          initial={{ opacity: 0, y: 130 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
           className="social-icon py-[15px] px-[14px]"
         />
-        <img
+        <motion.img
           src={facebookIcon}
           alt="facebook"
+          initial={{ opacity: 0, y: 180 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
           className="social-icon py-[15px] px-[14px]"
         />
       </div>

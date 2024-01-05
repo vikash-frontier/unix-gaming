@@ -6,7 +6,10 @@ const SectionSix = () => {
   const { animationRef, control } = useAnimationInView();
 
   return (
-    <div className="container mx-auto md:mt-[122px] relative">
+    <div
+      className="container mx-auto md:mt-[122px] relative"
+      ref={animationRef}
+    >
       <div className=" absolute -bottom-[150px] -right-[450px] hidden md:block">
         <img src={sectionSixElippse} alt="ellipse-six" />
       </div>
@@ -15,7 +18,6 @@ const SectionSix = () => {
         className={`email-card-container hidden md:flex justify-between px-[62px] py-[113px] w-full`}
         initial={{ opacity: 0, x: 0, y: 30 }}
         animate={control}
-        ref={animationRef}
         transition={{
           type: "tween",
           duration: 0.5,
@@ -27,15 +29,10 @@ const SectionSix = () => {
             Get unix gaming <br /> updates.
           </h2>
 
-          <p className="paragraph hidden md:block">
+          <p className="paragraph">
             when it comes to partnering new blockchain games, we <br /> only
             want to partner with project of class,continue to <br /> drive the
             future evolution of blockchaining games.
-          </p>
-          <p className="paragraph hidden text-center">
-            when it comes to partnering new blockchain games, we only want to
-            partner with project of class,continue to drive the future evolution
-            of blockchaining games.
           </p>
 
           <div className="mt-[52px] relative">
