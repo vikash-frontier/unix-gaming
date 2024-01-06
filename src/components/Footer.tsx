@@ -49,7 +49,7 @@ const Footer = () => {
           alt="instagram"
           initial={{ opacity: 0, y: 130 }}
           animate={control}
-          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+          transition={{ type: "tween", duration: 0.7, delay: 0.3 }}
           className="social-icon py-[15px] px-[14px]"
         />
         <motion.img
@@ -57,7 +57,7 @@ const Footer = () => {
           alt="facebook"
           initial={{ opacity: 0, y: 180 }}
           animate={control}
-          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+          transition={{ type: "tween", duration: 0.7, delay: 0.4 }}
           className="social-icon py-[15px] px-[14px]"
         />
       </div>

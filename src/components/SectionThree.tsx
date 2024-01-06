@@ -1,23 +1,44 @@
-import { downIcon, heroTwo, heroTwoBgImg1, heroTwoBgImg2 } from "../assets";
+import { motion } from "framer-motion";
+import { heroTwo, heroTwoBgImg1, heroTwoBgImg2 } from "../assets";
+import { useAnimationInView } from "../hooks/useAnimationInView";
 import { GAMER_DATA } from "../utils/mockData";
-import GamersItem from "./GamersItem";
+import GamersItemAccordian from "./GamersItemAccordian";
 
 const SectionThree = () => {
+  const { animationRef, control } = useAnimationInView();
+
   return (
     <div className="container mx-auto md:mt-20 mt-14">
-      <div>
-        <h2 className="heading2 text-center">The unix ecosystem</h2>
-        <p className="paragraph text-center md:block hidden">
+      <div ref={animationRef}>
+        <motion.h2
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.1 }}
+          className="heading2 text-center"
+        >
+          The unix ecosystem
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.3 }}
+          className="paragraph text-center md:block hidden"
+        >
           wanted is a web3 social app created for discovery. you tell us what
           you’re
           <br />
           interested in, and we help you find others to share your interests.
-        </p>
-        <p className="paragraph text-center md:hidden">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.3 }}
+          className="paragraph text-center md:hidden"
+        >
           wanted is a web3 social app created for discovery. you tell us what
           you’re interested in, and we help you find others to share your
           interests.
-        </p>
+        </motion.p>
       </div>
       <div className=" md:flex md:justify-between md:items-center">
         <div className=" relative">
@@ -27,29 +48,31 @@ const SectionThree = () => {
           <div className=" absolute top-[250px] left-40 -z-10">
             <img src={heroTwoBgImg2} alt="hero-bg-img" />
           </div>
-          <img src={heroTwo} alt="hero-two" />
+
+          <motion.img
+            src={heroTwo}
+            alt="hero-two"
+            initial={{ opacity: 0, x: -80 }}
+            animate={control}
+            transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+          />
         </div>
-        <div>
-          <p className="max-w-[443.867px] paragraph plateform-dropdown flex gap-6 py-[18px] cursor-pointer mb-5">
-            <img src={downIcon} alt="down-icon" className="pl-7" />
-            <span> Platform for gamers</span>
-          </p>
-          <p className="paragraph mb-[31px] md:block hidden">
-            owned is not another p2e platform. It’s the only <br /> platform
-            that puts games & gamers first. find <br /> play-to-own games based
-            on user review.
-          </p>
-          <p className="paragraph mb-[31px] md:hidden text-center">
-            owned is not another p2e platform. It’s the only <br /> platform
-            that puts games & gamers first. find <br /> play-to-own games based
-            on user review.
-          </p>
-          <div className="gamers-item-contaier ">
-            {GAMER_DATA.map(({ id, name, content }) => (
-              <GamersItem key={id} name={name} content={content} id={id} />
-            ))}
-          </div>
-        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+          className="gamers-item-contaier md:w-[574px]"
+        >
+          {GAMER_DATA.map(({ id, name, content }) => (
+            <GamersItemAccordian
+              key={id}
+              name={name}
+              content={content}
+              id={id}
+            />
+          ))}
+        </motion.div>
       </div>
     </div>
   );

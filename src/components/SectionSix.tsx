@@ -1,4 +1,4 @@
-import { sectionSixElippse, sectionSixImg } from "../assets";
+import { sectionSixImg } from "../assets";
 import { motion } from "framer-motion";
 import { useAnimationInView } from "../hooks/useAnimationInView";
 
@@ -6,34 +6,30 @@ const SectionSix = () => {
   const { animationRef, control } = useAnimationInView();
 
   return (
-    <div
-      className="container mx-auto md:mt-[122px] relative"
-      ref={animationRef}
-    >
-      <div className=" absolute -bottom-[150px] -right-[320px] hidden md:block">
-        <img src={sectionSixElippse} alt="ellipse-six" />
-      </div>
-
-      <motion.div
+    <div className="container mx-auto md:mt-[162px]" ref={animationRef}>
+      <div
         className={`email-card-container hidden md:flex justify-between px-[62px] py-[113px] w-full`}
-        initial={{ opacity: 0, x: 0, y: 30 }}
-        animate={control}
-        transition={{
-          type: "tween",
-          duration: 0.5,
-          delay: 0.4,
-        }}
       >
         <div>
-          <h2 className="heading2 mb-2.5">
+          <motion.h2
+            initial={{ opacity: 0, y: 80 }}
+            animate={control}
+            transition={{ type: "tween", duration: 0.7, delay: 0.1 }}
+            className="heading2 mb-2.5"
+          >
             Get unix gaming <br /> updates.
-          </h2>
+          </motion.h2>
 
-          <p className="paragraph">
+          <motion.p
+            initial={{ opacity: 0, y: 80 }}
+            animate={control}
+            transition={{ type: "tween", duration: 0.7, delay: 0.3 }}
+            className="paragraph"
+          >
             when it comes to partnering new blockchain games, we <br /> only
             want to partner with project of class,continue to <br /> drive the
             future evolution of blockchaining games.
-          </p>
+          </motion.p>
 
           <div className="mt-[52px] relative">
             <input
@@ -47,17 +43,22 @@ const SectionSix = () => {
             </button>
           </div>
         </div>
-        <div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          animate={control}
+          transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+        >
           <img src={sectionSixImg} alt="email-img" />
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       <div className={` md:hidden block`}>
         <div ref={animationRef}>
           <motion.h2
-            initial={{ opacity: 0, y: 180 }}
+            initial={{ opacity: 0, y: 80 }}
             animate={control}
-            transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+            transition={{ type: "tween", duration: 0.7, delay: 0.1 }}
             className="heading2 mb-2.5 text-center"
           >
             Get unix gaming updates.{" "}
@@ -68,8 +69,8 @@ const SectionSix = () => {
             animate={control}
             transition={{
               type: "tween",
-              duration: 0.5,
-              delay: 1.7,
+              duration: 1,
+              delay: 3,
             }}
             className="paragraph text-center"
           >

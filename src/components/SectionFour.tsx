@@ -1,14 +1,26 @@
+import { motion } from "framer-motion";
 import {
   sectionFourEllipse1,
   gardenCart,
   sectionFourImg,
   sectionFourEllipse2,
 } from "../assets";
+import { useAnimationInView } from "../hooks/useAnimationInView";
 
 const SectionFour = () => {
+  const { control, animationRef } = useAnimationInView();
+
   return (
-    <div className=" container mx-auto md:mt-[103px] mt-[80px] md:mb-[193px] mb-[100px] md:flex md:justify-between">
-      <div className=" relative">
+    <div
+      className=" container mx-auto md:mt-[103px] mt-[80px] md:mb-[193px] mb-[100px] md:flex md:justify-between "
+      ref={animationRef}
+    >
+      <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        animate={control}
+        transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+        className=" relative"
+      >
         <h2 className="heading2 mb-5 hidden md:block">
           Product, defined by <br /> it’s customer
         </h2>
@@ -32,20 +44,26 @@ const SectionFour = () => {
         <div className=" absolute top-[100px] -left-[320px] hidden md:block">
           <img src={sectionFourEllipse2} alt="section-three" />
         </div>
-      </div>
-      <div className=" relative">
-        <div className=" absolute -right-[250px] -top-[70px] -z-10 hidden md:block">
-          <img src={sectionFourEllipse1} alt="section-three" />
-        </div>
-        <div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        animate={control}
+        transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+      >
+        <div className=" relative">
           <img src={sectionFourImg} alt="img" />
+          <img
+            src={sectionFourEllipse1}
+            alt="section-three"
+            className=" w-full absolute top-[100px] left-[100px]  -z-10 hidden md:block"
+          />
         </div>
 
         <div className="buy-unix-token-btn flex justify-center gap-2.5 items-center mt-[56px] md:hidden">
           <img src={gardenCart} alt="garden-cart" />
           <span className="buy-btn-gradiant paragraph">Buy unix token</span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

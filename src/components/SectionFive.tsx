@@ -11,6 +11,8 @@ import {
   imgThree,
   imgTwo,
 } from "../assets/images/partnerships";
+import { PARTNERSHIP_DATA } from "../utils/mockData";
+import { sectionSixElippse } from "../assets";
 
 const SectionFive = () => {
   const { animationRef, control } = useAnimationInView();
@@ -21,7 +23,7 @@ const SectionFive = () => {
           <motion.h2
             initial={{ opacity: 0, y: 80 }}
             animate={control}
-            transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
+            transition={{ type: "tween", duration: 0.7, delay: 0.3 }}
             className="heading2 text-xl md:text-xxxl text-white"
           >
             Partnerships
@@ -107,85 +109,22 @@ const SectionFive = () => {
             </motion.div>
           </div>
         </div>
-        <div className="hidden md:flex flex-col items-center my-12">
-          <div className="flex gap-5 mb-6">
+        <div className="hidden md:flex justify-center items-center  gap-7 xxl:gap-16 md:px-12 xxl:px-96 flex-wrap py-7">
+          {PARTNERSHIP_DATA.map(({ imgUrl, id }) => (
             <motion.div
+              key={id}
               initial={{ opacity: 0, y: 80 }}
               animate={control}
               transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
-              className=" flex items-center justify-center partnership-card  rounded-[16px] px-10  w-[250px]"
+              className=" flex items-center justify-center partnership-card  rounded-[16px] w-32 md:w-60 h-24 p-5"
             >
-              <img src={imgOne} alt="img-one" />
+              <img src={imgUrl} alt="img-one" />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.3 }}
-              className=" flex items-center justify-center partnership-card  rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgTwo} alt="img-two" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.4 }}
-              className=" flex items-center justify-center partnership-card  rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgThree} alt="img-three" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.4 }}
-              className=" flex items-center justify-center partnership-card rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgFour} alt="img-four" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.4 }}
-              className=" flex items-center justify-center partnership-card  rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgFive} alt="img-five" />
-            </motion.div>
-          </div>
-
-          <div className="flex items-center justify-center gap-5">
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.5 }}
-              className=" flex items-center justify-center partnership-card rounded-[16px] py-[15px] px-10 w-[250px]"
-            >
-              <img src={imgSix} alt="img-six" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.6 }}
-              className=" flex items-center justify-center partnership-card py-[15px]  rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgSeven} alt="img-seven" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.7 }}
-              className=" flex items-center justify-center partnership-card py-[15px]  rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgEight} alt="img-eight" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={control}
-              transition={{ type: "tween", duration: 0.7, delay: 0.7 }}
-              className=" flex items-center justify-center partnership-card py-[15px]  rounded-[16px] px-10 w-[250px]"
-            >
-              <img src={imgNine} alt="img-nine" />
-            </motion.div>
-          </div>
+          ))}
         </div>
+      </div>
+      <div className=" absolute hidden md:block -top-40 right-0">
+        <img src={sectionSixElippse} alt="ellipse-six" />
       </div>
     </section>
   );

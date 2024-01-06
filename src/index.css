@@ -7,11 +7,11 @@
 @layer base {
   html {
     font-family: Inter, sans-serif;
-    overflow-x: hidden;
   }
   body {
     font-family: Inter, sans-serif;
     background: #0b0a0a;
+    opacity: 95;
   }
 }
 
@@ -28,26 +28,15 @@
 }
 
 .lending-page-bg {
-  background: url("../src/assets/images/bg-one.png");
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+  background: url("../src/assets/images/bg-one.png") no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .section-two-bg {
-  background: url("../src/assets/images/bg-two.png");
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 394px;
-  z-index: -10;
-  left: 0;
-
+  background: url("../src/assets/images/bg-two.png") no-repeat;
+  background-position: bottom;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .secondaryBtnGradient {
