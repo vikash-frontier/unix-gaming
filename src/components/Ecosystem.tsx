@@ -4,11 +4,11 @@ import { useAnimationInView } from "../hooks/useAnimationInView";
 import { GAMER_DATA } from "../utils/mockData";
 import GamersItemAccordian from "./GamersItemAccordian";
 
-const SectionThree = () => {
+const Ecosystem = () => {
   const { animationRef, control } = useAnimationInView();
 
   return (
-    <div className="container mx-auto md:mt-20 mt-14">
+    <div className="container mx-auto md:mt-20 mt-14 relative">
       <div ref={animationRef}>
         <motion.h2
           initial={{ opacity: 0, y: 80 }}
@@ -78,4 +78,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default Ecosystem;

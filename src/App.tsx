@@ -1,26 +1,25 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import SectionFive from "./components/SectionFive";
-import SectionFour from "./components/SectionFour";
-import SectionOne from "./components/SectionOne";
-import SectionSix from "./components/SectionSix";
-import SectionThree from "./components/SectionThree";
-import SectionTwo from "./components/SectionTwo";
+import Partnerships from "./components/Partnerships";
+import ProductSection from "./components/ProductSection";
+import LendingPage from "./components/LendingPage";
+import GamingCard from "./components/GamingCard";
+import Ecosystem from "./components/Ecosystem";
+import CardItem from "./components/CardItem";
 
 function App() {
   return (
     <div>
-      <SectionOne />
+      <LendingPage />
 
-      <SectionTwo />
+      <CardItem />
 
-      <SectionThree />
+      <Ecosystem />
 
-      <SectionFour />
+      <ProductSection />
 
-      <SectionFive />
+      <Partnerships />
 
-      <SectionSix />
+      <GamingCard />
 
       <Footer />
     </div>

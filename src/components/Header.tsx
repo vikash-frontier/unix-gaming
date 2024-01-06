@@ -41,7 +41,7 @@ const Header = () => {
                 alt="expand"
                 className={` group-hover/menu:block w-4 h-4`}
               />
-              {/* <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
+              <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
                 <ul>
                   <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
                     <div className="flex items-center gap-2">
@@ -54,7 +54,7 @@ const Header = () => {
                     </div>
                   </li>
                 </ul>
-              </div> */}
+              </div>
             </div>
           </li>
           <li className=" header-menu-list flex items-center relative cursor-pointer group/menu">
@@ -63,7 +63,7 @@ const Header = () => {
             >
               Buy unix token
               <img src={downGray} alt="expand" className={`w-4 h-4`} />
-              {/* <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
+              <div className="header-submenu min-w-[160px]  shadow-headerMenu rounded-large p-[10px] custom_menu_border absolute top-full left-[22px] flex gap-x-2">
                 <ul>
                   <li className="header-submenu-list rounded-lg mb-1  group/subMenu">
                     <div className="flex items-center gap-2">
@@ -86,7 +86,7 @@ const Header = () => {
                     </div>
                   </li>
                 </ul>
-              </div> */}
+              </div>
             </div>
           </li>
           <li className=" relative ">
@@ -98,20 +98,26 @@ const Header = () => {
             </div>
           </li>
         </nav>
-        <button className="secondaryBtnGradient p-[1px] paragraph_medium inline-block rounded-[36px] cursor-pointer hover:!hoverSecondaryBtnGradient  text-primary ">
+        <button className="secondaryBtnGradient p-[1px] paragraph_medium inline-block rounded-[36px] cursor-pointer hover:hoverSecondaryBtnGradient hover:bg-[#F204DA]  text-primary ">
           Login
         </button>
       </header>
 
       <header
-        className={`header sticky top-0 md:hidden flex items-center justify-between py-2 px-5 w-full z-[99] left-0 `}
+        className={`header fixed top-0 md:hidden flex items-center justify-between py-2 px-5 w-full z-[999] left-0 `}
       >
         <div
           className={`w-full h-full absolute top-0 left-0 backdrop-blur-[30px] ${
             scroll ? "opacity-1" : "opacity-0"
           } `}
         ></div>
-        <img src={logo} alt="Logo" width={110} height={110} className=" z-10" />
+        <img
+          src={logo}
+          alt="Logo"
+          width={110}
+          height={110}
+          className=" z-[999]"
+        />
         <Hamburger
           color="#9AA0AB"
           size={24}

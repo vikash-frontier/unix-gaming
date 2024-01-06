@@ -2,10 +2,10 @@ import { Fragment } from "react";
 import { heroImg } from "../assets";
 import Header from "./Header";
 
-const SectionOne = () => {
+const LendingPage = () => {
   return (
     <Fragment>
-      <div className="h-[840px] pt-12 md:w-full lending-page-bg px-8 md:px-36  relative ">
+      <div className="h-[840px] pt-16 md:pt-12 md:w-full lending-page-bg  md:px-36  relative ">
         <Header />
         <div className=" text-center w-full md:w-[70%] ">
           <h2 className="heading1 md:text-left text-center  leading-normal  mb-3">
@@ -36,4 +36,4 @@ const SectionOne = () => {
   );
 };
 
-export default SectionOne;
+export default LendingPage;

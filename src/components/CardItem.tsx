@@ -2,10 +2,10 @@ import { useAnimationInView } from "../hooks/useAnimationInView";
 import { motion } from "framer-motion";
 import { MARKETING_DATA } from "../utils/mockData";
 
-const SectionTwo = () => {
+const CardItem = () => {
   const { control, animationRef } = useAnimationInView();
   return (
-    <div className="section-two-bg h-full md:h-[400px] grid place-items-center pb-8">
+    <div className="section-two-bg h-full md:h-[400px] grid place-items-center relative pb-8">
       <div
         className="mt-10 md:mt-0 xxl:mt-5 md:flex md:gap-3 lg:gap-10 md:justify-between"
         ref={animationRef}
@@ -30,4 +30,4 @@ const SectionTwo = () => {
   );
 };
 
-export default SectionTwo;
+export default CardItem;

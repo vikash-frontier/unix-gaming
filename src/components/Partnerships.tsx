@@ -14,7 +14,7 @@ import {
 import { PARTNERSHIP_DATA } from "../utils/mockData";
 import { sectionSixElippse } from "../assets";
 
-const SectionFive = () => {
+const Partnerships = () => {
   const { animationRef, control } = useAnimationInView();
   return (
     <section className="flex items-center flex-col relative  justify-center z-10">
@@ -130,4 +130,4 @@ const SectionFive = () => {
   );
 };
 
-export default SectionFive;
+export default Partnerships;

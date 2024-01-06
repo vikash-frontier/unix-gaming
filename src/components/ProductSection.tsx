@@ -7,7 +7,7 @@ import {
 } from "../assets";
 import { useAnimationInView } from "../hooks/useAnimationInView";
 
-const SectionFour = () => {
+const ProductSection = () => {
   const { control, animationRef } = useAnimationInView();
 
   return (
@@ -68,4 +68,4 @@ const SectionFour = () => {
   );
 };
 
-export default SectionFour;
+export default ProductSection;

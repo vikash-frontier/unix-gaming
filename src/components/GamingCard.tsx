@@ -2,7 +2,7 @@ import { sectionSixImg } from "../assets";
 import { motion } from "framer-motion";
 import { useAnimationInView } from "../hooks/useAnimationInView";
 
-const SectionSix = () => {
+const GamingCard = () => {
   const { animationRef, control } = useAnimationInView();
 
   return (
@@ -108,4 +108,4 @@ const SectionSix = () => {
   );
 };
 
-export default SectionSix;
+export default GamingCard;
