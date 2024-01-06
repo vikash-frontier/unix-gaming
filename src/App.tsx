@@ -12,7 +12,9 @@ function App() {
     <div>
       <div className="lending-page-bg" />
       <Header />
+
       <SectionOne />
+
       <SectionTwo />
 
       <SectionThree />

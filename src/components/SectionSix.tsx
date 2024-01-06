@@ -10,7 +10,7 @@ const SectionSix = () => {
       className="container mx-auto md:mt-[122px] relative"
       ref={animationRef}
     >
-      <div className=" absolute -bottom-[150px] -right-[450px] hidden md:block">
+      <div className=" absolute -bottom-[150px] -right-[320px] hidden md:block">
         <img src={sectionSixElippse} alt="ellipse-six" />
       </div>
 

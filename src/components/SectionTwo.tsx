@@ -14,7 +14,7 @@ const SectionTwo = () => {
         {MARKETING_DATA.map((item) => (
           <motion.div
             key={item.id}
-            className="card-item lg:w-[250px] lg:h-[250px] flex flex-col justify-center items-center mb-4 md:mb-0 -mt-10 "
+            className="card-item lg:w-[250px] lg:h-[250px] flex flex-col justify-center items-center mb-4 md:mb-0 md:-mt-10 "
             initial={{ opacity: 0, y: 80 }}
             animate={control}
             transition={{ type: "tween", duration: 0.7, delay: 0.2 }}

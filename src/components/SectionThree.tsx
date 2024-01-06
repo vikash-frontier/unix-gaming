@@ -1,5 +1,4 @@
 import { downIcon, heroTwo, heroTwoBgImg1, heroTwoBgImg2 } from "../assets";
-import Accordion from "./Accordian";
 import GamersItem from "./GamersItem";
 
 const SectionThree = () => {
@@ -29,11 +28,6 @@ const SectionThree = () => {
           </div>
           <img src={heroTwo} alt="hero-two" />
         </div>
-        {/* 
-        <Accordion
-        
-        
-        /> */}
         <div>
           <p className="max-w-[443.867px] paragraph plateform-dropdown flex gap-6 py-[18px] cursor-pointer mb-5">
             <img src={downIcon} alt="down-icon" className="pl-7" />
