@@ -27,18 +27,22 @@ export const GAMER_DATA = [
   {
     id: 1,
     name: "Sdk for games",
+    content: ["Item 1", "Item 2", "Item 3"],
   },
   {
     id: 2,
     name: "Web3 social app",
+    content: ["Item 1", "Item 2"],
   },
   {
     id: 3,
     name: "Multi-chain launchpad",
+    content: ["Item 1", "Item 2"],
   },
 
   {
     id: 4,
     name: "Gaming Studio",
+    content: ["Item 1", "Item 2"],
   },
 ];

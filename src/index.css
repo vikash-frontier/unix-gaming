@@ -201,3 +201,8 @@
   backdrop-filter: blur(74.65984344482422px);
   box-sizing: border-box;
 }
+
+.card-price-bg {
+  border-radius: 6.012px;
+  background: linear-gradient(90deg, #f204da 0%, #9616c3 100%);
+}

@@ -1,4 +1,5 @@
 import { downIcon, heroTwo, heroTwoBgImg1, heroTwoBgImg2 } from "../assets";
+import { GAMER_DATA } from "../utils/mockData";
 import GamersItem from "./GamersItem";
 
 const SectionThree = () => {
@@ -43,7 +44,11 @@ const SectionThree = () => {
             that puts games & gamers first. find <br /> play-to-own games based
             on user review.
           </p>
-          <GamersItem />
+          <div className="gamers-item-contaier ">
+            {GAMER_DATA.map(({ id, name, content }) => (
+              <GamersItem key={id} name={name} content={content} id={id} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
