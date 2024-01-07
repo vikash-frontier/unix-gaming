@@ -9,17 +9,20 @@ const GamingCard = () => {
 
   const onHandleSubmit = () => {
     if (input) {
-      alert(`Hi visitor, your email id ${input} is submitted successfully.`);
+      alert(`Hi There, your email id ${input} is submitted successfully.`);
     } else {
-      alert("Please enter your email id");
+      alert("Please enter your Email");
     }
     setInput("");
   };
 
   return (
-    <div className="container mx-auto md:mt-[162px]" ref={animationRef}>
+    <div
+      className="container mx-auto md:mt-[162px] relative"
+      ref={animationRef}
+    >
       <div
-        className={`email-card-container hidden md:flex justify-between px-[62px] py-[113px] w-full`}
+        className={`email-card-container hidden md:flex justify-between px-[62px] py-[113px] w-full relative`}
       >
         <div>
           <motion.h2
@@ -47,7 +50,7 @@ const GamingCard = () => {
               type="text"
               value={input}
               placeholder="Your email here"
-              className="paragraph email-inp py-[17px] px-[54px]  text-[33px] w-[660px]  placeholder-white"
+              className="paragraph outline-none email-inp py-[17px] px-[54px]  text-[33px] w-[660px]  placeholder-white"
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
                 setInput(e.target.value)
               }
@@ -114,7 +117,7 @@ const GamingCard = () => {
               type="text"
               value={input}
               placeholder="Your email here"
-              className="paragraph email-inp  py-[15px] px-[35px]   text-[14px] w-full placeholder-white"
+              className="paragraph outline-none email-inp  py-[15px] px-[35px]   text-[14px] w-full placeholder-white"
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
                 setInput(e.target.value)
               }

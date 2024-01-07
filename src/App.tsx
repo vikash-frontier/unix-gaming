@@ -15,9 +15,10 @@ function App() {
         <Ecosystem />
         <ProductSection />
         <Partnerships />
+        <GamingCard />
+
         <Footer />
       </div>
-      <GamingCard />
     </>
   );
 }
