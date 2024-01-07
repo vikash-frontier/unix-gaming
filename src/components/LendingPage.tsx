@@ -49,7 +49,7 @@ const LendingPage = () => {
             alt="hero-img"
             className=" block md:hidden mb-10"
           />
-          <button className="md:block paragraph md:text-[30px] text-[18px] mx-4 md:w-[336px] md:py-4  md:mx-0 px-12 py-2 primaryBtnGradient rounded-[40px] hover:scale-110 transition-all duration-300 ease-in-out">
+          <button className="md:block paragraph md:text-[30px] text-[18px] mx-6 md:w-[336px] md:py-4  md:mx-0 md:px-8 px-12 py-2 primaryBtnGradient rounded-[40px] hover:scale-110 transition-all duration-300 ease-in-out">
             Kickstart my game
           </button>
         </div>
