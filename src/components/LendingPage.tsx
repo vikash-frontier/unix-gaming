@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import { heroImg } from "../assets";
 import Header from "./Header";
 import { useAnimationInView } from "../hooks/useAnimationInView";
+import CardItem from "./CardItem";
 
 const LendingPage = () => {
   const { control, animationRef } = useAnimationInView();
@@ -71,6 +72,7 @@ const LendingPage = () => {
           />
         </div>
       </div>
+      <CardItem />
     </Fragment>
   );
 };

@@ -7,22 +7,28 @@ const CardItem = () => {
   return (
     <div className="section-two-bg h-full md:h-[400px] grid place-items-center pb-8 ">
       <div
-        className="mt-10 md:mt-0 xxl:mt-5 md:flex md:gap-3 lg:gap-10 md:justify-between"
+        className="flex flex-col mt-10 md:mt-0  md:flex-row  gap-16 text-secondary-100 xxl:gap-36"
         ref={animationRef}
       >
         {MARKETING_DATA.map((item) => (
           <motion.div
             key={item.id}
-            className="card-item  lg:w-[250px] xxl:w-[300px] xxl:h-[300px] lg:h-[250px] flex flex-col justify-end items-center mb-4 relative "
+            className="card-item  w-40 h-40 md:w-[200px] md:h-[200px] lg:w-60 lg:h-60  rounded-[20px] flex justify-center items-center flex-col relative "
             initial={{ opacity: 0, y: 80 }}
             animate={control}
             transition={{ type: "tween", duration: 0.7, delay: 0.2 }}
           >
-            <div className="card-price-bg px-[18px] py-1 paragraph text-[20px] absolute top-2 md:top-[24px] right-[33px]">
+            <div className="card-price-bg py-1 paragraph text-[16px] absolute  right-5 md:right-8 top-2 w-16 text-center md:top-4">
               <span>11.2K</span>
             </div>
-            <img src={item.imageUrl} alt={`${item.name}`} />
-            <p className="paragraph mb-3">{item.name}</p>
+            <img
+              src={item.imageUrl}
+              alt={`${item.name}`}
+              className="h-20 w-24 md:h-32 mt-5 md:w-40"
+            />
+            <p className="paragraph md:mt-4 text-[20px]  md:text-3xl ">
+              {item.name}
+            </p>
           </motion.div>
         ))}
       </div>
