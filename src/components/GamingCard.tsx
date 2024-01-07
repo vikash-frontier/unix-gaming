@@ -18,7 +18,7 @@ const GamingCard = () => {
 
   return (
     <div
-      className="container mx-auto md:mt-[162px] relative"
+      className="container mx-auto md:mt-[162px] relative z-10"
       ref={animationRef}
     >
       <div

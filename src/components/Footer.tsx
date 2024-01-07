@@ -15,7 +15,7 @@ const Footer = () => {
       <img
         src={sectionFooter}
         alt=""
-        className=" absolute -top-[650px] -left-[350px]"
+        className=" absolute -top-[650px] -left-[350px] -z-[100]"
       />
 
       <div className=" flex gap-[17px] items-center">

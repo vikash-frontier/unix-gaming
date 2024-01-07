@@ -123,7 +123,7 @@ const Partnerships = () => {
           ))}
         </div>
       </div>
-      <div className=" absolute hidden md:block -top-40 right-0">
+      <div className=" absolute hidden md:block -top-40 right-0 -z-[100]">
         <img src={sectionSixElippse} alt="ellipse-six" />
       </div>
     </section>
