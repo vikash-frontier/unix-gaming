@@ -3,10 +3,16 @@ import { heroTwo, heroTwoBgImg1, heroTwoBgImg2 } from "../assets";
 import { useAnimationInView } from "../hooks/useAnimationInView";
 import { GAMER_DATA } from "../utils/mockData";
 import GamersItemAccordian from "./GamersItemAccordian";
+import { useState } from "react";
 
 const Ecosystem = () => {
   const { animationRef, control } = useAnimationInView();
 
+  const [isOpen, setIsOpen] = useState<null | number>(null);
+
+  const handleOpen = (index: number) => {
+    setIsOpen((prev: any) => (prev === index ? null : index));
+  };
   return (
     <div className="container mx-auto md:mt-20 mt-14 relative">
       <div ref={animationRef}>
@@ -14,7 +20,7 @@ const Ecosystem = () => {
           initial={{ opacity: 0, y: 80 }}
           animate={control}
           transition={{ type: "tween", duration: 0.7, delay: 0.1 }}
-          className="heading2 text-center"
+          className="heading2 text-center mb-5"
         >
           The unix ecosystem
         </motion.h2>
@@ -70,6 +76,8 @@ const Ecosystem = () => {
               name={name}
               content={content}
               id={id}
+              handleOpen={handleOpen}
+              isOpen={isOpen}
             />
           ))}
         </motion.div>

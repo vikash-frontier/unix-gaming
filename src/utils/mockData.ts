@@ -42,26 +42,26 @@ export const GAMER_DATA = [
       "owned is not another p2e platform. It’s the only platform that puts games & gamers first. find play-to-own games based on user review.",
   },
   {
-    id: 1,
+    id: 2,
     name: "Sdk for games",
     content:
       "owned is not another p2e platform. It’s the only platform that puts games",
   },
   {
-    id: 2,
+    id: 3,
     name: "Web3 social app",
     content:
       "owned is not another p2e platform. It’s the only platform that puts games",
   },
   {
-    id: 3,
+    id: 4,
     name: "Multi-chain launchpad",
     content:
       "owned is not another p2e platform. It’s the only platform that puts games",
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Gaming Studio",
     content:
       "owned is not another p2e platform. It’s the only platform that puts games",

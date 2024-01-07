@@ -8,21 +8,17 @@ import CardItem from "./components/CardItem";
 
 function App() {
   return (
-    <div>
-      <LendingPage />
-
-      <CardItem />
-
-      <Ecosystem />
-
-      <ProductSection />
-
-      <Partnerships />
-
+    <>
+      <div>
+        <LendingPage />
+        <CardItem />
+        <Ecosystem />
+        <ProductSection />
+        <Partnerships />
+        <Footer />
+      </div>
       <GamingCard />
-
-      <Footer />
-    </div>
+    </>
   );
 }
 

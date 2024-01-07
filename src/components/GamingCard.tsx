@@ -1,9 +1,20 @@
 import { sectionSixImg } from "../assets";
 import { motion } from "framer-motion";
 import { useAnimationInView } from "../hooks/useAnimationInView";
+import { useState, ChangeEvent } from "react";
 
 const GamingCard = () => {
   const { animationRef, control } = useAnimationInView();
+  const [input, setInput] = useState("");
+
+  const onHandleSubmit = () => {
+    if (input) {
+      alert(`Hi visitor, your email id ${input} is submitted successfully.`);
+    } else {
+      alert("Please enter your email id");
+    }
+    setInput("");
+  };
 
   return (
     <div className="container mx-auto md:mt-[162px]" ref={animationRef}>
@@ -34,11 +45,18 @@ const GamingCard = () => {
           <div className="mt-[52px] relative">
             <input
               type="text"
+              value={input}
               placeholder="Your email here"
               className="paragraph email-inp py-[17px] px-[54px]  text-[33px] w-[660px]  placeholder-white"
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setInput(e.target.value)
+              }
             />
 
-            <button className="email-inp paragraph md:py-[17px]  px-[54px] text-[33px]  inline-block absolute right-0 active:border-none ">
+            <button
+              onClick={onHandleSubmit}
+              className="email-inp paragraph md:py-[17px]  px-[54px] text-[33px]  inline-block absolute right-0 active:border-none "
+            >
               Submit
             </button>
           </div>
@@ -94,11 +112,18 @@ const GamingCard = () => {
           <div className="mt-[52px] relative">
             <input
               type="text"
+              value={input}
               placeholder="Your email here"
               className="paragraph email-inp  py-[15px] px-[35px]   text-[14px] w-full placeholder-white"
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setInput(e.target.value)
+              }
             />
 
-            <button className="email-inp paragraph  py-[15px] px-[35px]  text-[14px] inline-block absolute right-0 active:border-none ">
+            <button
+              onClick={onHandleSubmit}
+              className="email-inp paragraph  py-[15px] px-[35px]  text-[14px] inline-block absolute right-0 active:border-none "
+            >
               Submit
             </button>
           </div>

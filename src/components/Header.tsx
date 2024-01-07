@@ -22,7 +22,9 @@ const Header = () => {
 
   return (
     <>
-      <header className={`hidden md:flex justify-between items-center  mb-24`}>
+      <header
+        className={`hidden md:flex justify-between items-center w-full  mb-24`}
+      >
         <img src={logo} alt="Logo" className=" z-[20]" />
         <nav className={` flex gap-[30px] items-center list-none z-[20] `}>
           <li className=" text-primary">
